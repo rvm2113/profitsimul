@@ -21,6 +21,9 @@
                                 <rect key="frame" x="77" y="411" width="106" height="69"/>
                                 <animations/>
                                 <state key="normal" title="Maximize Profit"/>
+                                <connections>
+                                    <action selector="MaximizeProf:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pFd-ai-UN2"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Maximum Number of Transactions:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="47j-DC-eNf">
                                 <rect key="frame" x="20" y="43" width="268" height="21"/>
@@ -33,6 +36,9 @@
                                 <rect key="frame" x="199" y="308" width="110" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Enter New Price"/>
+                                <connections>
+                                    <action selector="InputPrice:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IJp-Zs-czX"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fIw-Fu-mC7">
                                 <rect key="frame" x="77" y="91" width="11" height="21"/>
@@ -60,18 +66,24 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="c2Q-ww-Tnb">
-                                <rect key="frame" x="41" y="120" width="118" height="31"/>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="4" translatesAutoresizingMaskIntoConstraints="NO" id="c2Q-ww-Tnb">
+                                <rect key="frame" x="41" y="120" width="168" height="31"/>
                                 <animations/>
+                                <connections>
+                                    <action selector="TransactionValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="rzc-jr-WcE"/>
+                                </connections>
                             </slider>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="TransactionSlider" destination="c2Q-ww-Tnb" id="DVH-Pd-Mz8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="162.66666666666666" y="395.70666666666659"/>
+            <point key="canvasLocation" x="162" y="395"/>
         </scene>
     </scenes>
 </document>

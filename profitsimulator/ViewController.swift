@@ -12,5 +12,21 @@ class ViewController: UIViewController {
 
     //heres a comment
 
+    @IBOutlet weak var TransactionSlider: UISlider!
+    
+    
+    @IBAction func TransactionValueChanged(sender: AnyObject) {
+    
+    
+    }
+    
+    
+    @IBAction func InputPrice(sender: AnyObject) {
+    
+    }
+    
+    
+    @IBAction func MaximizeProf(sender: AnyObject) {
+    }
 }
 
